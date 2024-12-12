@@ -14,9 +14,13 @@ tags:
 
 
 
-`source venv/bin/activate`
+``` bash 
+source venv/bin/activate
+``` 
 
-`flask run`
+``` bash 
+flask run 
+``` 
 
 http://localhost:5000/
 http://127.0.0.1:5000
