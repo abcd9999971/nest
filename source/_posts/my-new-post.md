@@ -24,3 +24,10 @@ flask run
 
 http://localhost:5000/
 http://127.0.0.1:5000
+
+遷移命令
+```bash
+flask db migrate
+flask db migrate -m "users table"
+```
+`-m` 是可選的註解

@@ -8,7 +8,7 @@ subtitle: ''
 description: ''
 keywords:
 author: John Doe
-language: en
+language: zh-TW
 timezone: ''
 
 # URL
@@ -96,7 +96,18 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
+# Word Count Settings
+symbols_count_time:
+  symbols: true             # 文章字數統計
+  time: true               # 閱讀時間
+  total_symbols: true      # 網站總字數統計
+  total_time: true         # 網站總閱讀時間
+  exclude_codeblock: false # 排除程式碼區塊
+  awl: 4                   # 平均字長
+  wpm: 275                 # 每分鐘閱讀字數
+  suffix: "mins."
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
