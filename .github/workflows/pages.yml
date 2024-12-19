@@ -2,7 +2,7 @@ name: Deploy Hexo site to Pages
 
 on:
   push:
-    branches: ["main"]  # 或是你的主分支名稱
+    branches: ["master"]  # 或是你的主分支名稱
   workflow_dispatch:
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "23.2.0"
           
       - name: Install Dependencies
         run: |
