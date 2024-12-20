@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Nest
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: 刺刺刺刺刺
 language: zh-TW
 timezone: ''
 
@@ -112,7 +112,3 @@ symbols_count_time:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/abcd9999971/nest.git
-  branch: master
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
