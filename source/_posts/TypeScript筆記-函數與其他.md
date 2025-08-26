@@ -110,3 +110,30 @@ function request1() {
 類似超級class?
 - reverse<T>(items: T[]): T[]：這是使用了 泛型 的函數，可以處理任何類型的陣列，並且保持類型的安全性。T 是一個佔位符，它會在函數使用時被具體的類型替代。
 - reverse(items: T[]): T[]：這種寫法會有錯誤，因為 T 必須在函數外部或是作為泛型參數來定義，這樣寫會讓 TypeScript 無法知道 T 是什麼類型。
+
+
+
+### 分割代入
+
+```
+const good = {
+  const price : 550 ,
+  const weight : 10 ,
+};
+```
+如果想取得這個good的屬性可以使用
+```
+const price = good.price
+const weight = good.weight
+```
+但是使用分割代入會更快速
+```
+const {price, weight} = good
+```
+
+可以這樣直接應用
+```
+const getMoreInfo = ({price, weight}) => {
+  return `${price} ${weight}`
+}
+```
