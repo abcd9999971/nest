@@ -35,7 +35,7 @@ go run ./cmd/bot
 ```
 
 `main.go`
-```golang
+```Go
 package
 
 import (
@@ -46,17 +46,6 @@ func main(){
     fmt.Println("Hello my friend!")
 }
 ```
-這邊感覺比較好看所以寫成
-```Golang
-func main(){
-    fmt.Println(
-        "Hello my friend!"
-        )
-}
-```
-就吃了syntax error : )
-
-`syntax error: unexpected newline in argument list; possibly missing comma or )`
 
 
 得到回應Hello my friend!之後進入下一步~
@@ -88,4 +77,24 @@ docker run --rm ymst_lab_bot
 
 會出現熟悉的
 `Hello my friend!`
+
+### STEP3
+
+讓程式讀取環境變數 推薦寫在docker檔案但我覺得好危險所以沒有這part
+
+
+## QA
+### GO文法問題
+mian.go的參數感覺比較好看所以寫成
+
+```Go
+func main(){
+    fmt.Println(
+        "Hello my friend!"
+        )
+}
+```
+就吃了syntax error : )
+
+`syntax error: unexpected newline in argument list; possibly missing comma or )`
 
