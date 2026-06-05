@@ -2,6 +2,7 @@
 title: Vue v-bind與元素屬性
 date: 2026-04-16 17:28:42
 tags:
+disableNunjucks: true
 ---
 
 天啊真不敢相信我還在跟DOM打架
